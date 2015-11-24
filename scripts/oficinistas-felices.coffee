@@ -40,5 +40,5 @@ images = [
 ]
 
 module.exports = (robot) ->
-  robot.hear /coffe|aguinaldo/gi, (msg) ->
+  robot.hear /coffee/()/gbreak|aguinaldo/gi, (msg) ->
     msg.send msg.random images
