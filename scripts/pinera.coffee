@@ -40,5 +40,5 @@ images = [
 ]
 
 module.exports = (robot) ->
-  robot.hear /Pi[Ñ|ñ|n]era|yeta|pi[Ñ|ñ|n]i/gi, (msg) ->
+  robot.respond /Pi[Ñ|ñ|n]era|yeta|pi[Ñ|ñ|n]i/gi, (msg) ->
     msg.send msg.random images
