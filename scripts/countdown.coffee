@@ -28,7 +28,7 @@ module.exports = (robot) ->
     eventTime = new Date(robot.brain.data.countdown[countdownKey].date)
     gap = eventTime.getTime() - now.getTime()
     gap =  Math.floor(gap / (1000 * 60 * 60 * 24));
-    "Quedan sólo #{gap} días para #{countdownKey} (⊙△⊙✿)!"
+    "¡Quedan sólo #{gap} días para #{countdownKey} (⊙△⊙✿)!"
 
   robot.hear /countdown set (\w+) (.*)/i, (msg) ->
     robot.brain.data.countdown or= {}
